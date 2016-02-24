@@ -1,0 +1,145 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TriExporter", "TriExporter\TriExporter.vcxproj", "{2841A89B-0932-4EFC-90C3-2D51CDD9A55F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{61764508-3F6E-474C-A0BF-CEC4833AAF0B} = {61764508-3F6E-474C-A0BF-CEC4833AAF0B}
+		{45D7E18B-52B5-4AF5-9BE4-E4356D217B32} = {45D7E18B-52B5-4AF5-9BE4-E4356D217B32}
+		{21BB29BB-9E5C-4CCF-8C52-9AB455E4EE10} = {21BB29BB-9E5C-4CCF-8C52-9AB455E4EE10}
+		{C45F92CE-63BB-4C66-9C17-B4AAA18E46DD} = {C45F92CE-63BB-4C66-9C17-B4AAA18E46DD}
+		{7959E0E7-4C8D-4E33-A94F-BB033F71DAD8} = {7959E0E7-4C8D-4E33-A94F-BB033F71DAD8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlib", "zlib\zlib.vcxproj", "{C45F92CE-63BB-4C66-9C17-B4AAA18E46DD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libpng", "libpng\libpng.vcxproj", "{21BB29BB-9E5C-4CCF-8C52-9AB455E4EE10}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C45F92CE-63BB-4C66-9C17-B4AAA18E46DD} = {C45F92CE-63BB-4C66-9C17-B4AAA18E46DD}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DevIL", "DevIL\DevIL.vcxproj", "{61764508-3F6E-474C-A0BF-CEC4833AAF0B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{21BB29BB-9E5C-4CCF-8C52-9AB455E4EE10} = {21BB29BB-9E5C-4CCF-8C52-9AB455E4EE10}
+		{C45F92CE-63BB-4C66-9C17-B4AAA18E46DD} = {C45F92CE-63BB-4C66-9C17-B4AAA18E46DD}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lib3ds", "lib3ds\lib3ds.vcxproj", "{7959E0E7-4C8D-4E33-A94F-BB033F71DAD8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ilu", "ilu\ilu.vcxproj", "{45D7E18B-52B5-4AF5-9BE4-E4356D217B32}"
+	ProjectSection(ProjectDependencies) = postProject
+		{61764508-3F6E-474C-A0BF-CEC4833AAF0B} = {61764508-3F6E-474C-A0BF-CEC4833AAF0B}
+		{21BB29BB-9E5C-4CCF-8C52-9AB455E4EE10} = {21BB29BB-9E5C-4CCF-8C52-9AB455E4EE10}
+		{C45F92CE-63BB-4C66-9C17-B4AAA18E46DD} = {C45F92CE-63BB-4C66-9C17-B4AAA18E46DD}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "grannystuff", "grannystuff", "{6A9CBFF4-978F-414E-B1CF-A5D4F460AD7B}"
+	ProjectSection(SolutionItems) = preProject
+		grannystuff\AutoGranny.h = grannystuff\AutoGranny.h
+		grannystuff\Granny.h = grannystuff\Granny.h
+		grannystuff\structs.h = grannystuff\structs.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WTL", "WTL", "{AB8B019B-491B-46E2-B786-905A42511E5B}"
+	ProjectSection(SolutionItems) = preProject
+		WTL\atlapp.h = WTL\atlapp.h
+		WTL\atlcrack.h = WTL\atlcrack.h
+		WTL\atlctrls.h = WTL\atlctrls.h
+		WTL\atlctrlw.h = WTL\atlctrlw.h
+		WTL\atlctrlx.h = WTL\atlctrlx.h
+		WTL\atlddx.h = WTL\atlddx.h
+		WTL\atldlgs.h = WTL\atldlgs.h
+		WTL\atldwm.h = WTL\atldwm.h
+		WTL\atlfind.h = WTL\atlfind.h
+		WTL\atlframe.h = WTL\atlframe.h
+		WTL\atlgdi.h = WTL\atlgdi.h
+		WTL\atlmisc.h = WTL\atlmisc.h
+		WTL\atlprint.h = WTL\atlprint.h
+		WTL\atlres.h = WTL\atlres.h
+		WTL\atlresce.h = WTL\atlresce.h
+		WTL\atlscrl.h = WTL\atlscrl.h
+		WTL\atlsplit.h = WTL\atlsplit.h
+		WTL\atltheme.h = WTL\atltheme.h
+		WTL\atluser.h = WTL\atluser.h
+		WTL\atlwince.h = WTL\atlwince.h
+		WTL\atlwinx.h = WTL\atlwinx.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{627A8A46-25D5-4E52-B547-BE0E76F64275}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "props", "props", "{06C53E6C-317A-4848-BFD8-A4DD3C5D8B32}"
+	ProjectSection(SolutionItems) = preProject
+		dxsdk.props = dxsdk.props
+		fbxsdk.props = fbxsdk.props
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs21
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DevIL\\DevIL.vcxproj
+		SccProjectTopLevelParentUniqueName1 = TriExporter.sln
+		SccProjectName1 = DevIL
+		SccLocalPath1 = DevIL
+		SccProjectUniqueName2 = ilu\\ilu.vcxproj
+		SccProjectTopLevelParentUniqueName2 = TriExporter.sln
+		SccProjectName2 = ilu
+		SccLocalPath2 = ilu
+		SccProjectUniqueName3 = lib3ds\\lib3ds.vcxproj
+		SccProjectTopLevelParentUniqueName3 = TriExporter.sln
+		SccProjectName3 = lib3ds
+		SccLocalPath3 = lib3ds
+		SccProjectUniqueName4 = libpng\\libpng.vcxproj
+		SccProjectTopLevelParentUniqueName4 = TriExporter.sln
+		SccProjectName4 = libpng
+		SccLocalPath4 = libpng
+		SccProjectUniqueName5 = TriExporter\\TriExporter.vcxproj
+		SccProjectName5 = TriExporter
+		SccLocalPath5 = TriExporter
+		SccProjectUniqueName6 = zlib\\zlib.vcxproj
+		SccProjectTopLevelParentUniqueName6 = TriExporter.sln
+		SccProjectName6 = zlib
+		SccLocalPath6 = zlib
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2841A89B-0932-4EFC-90C3-2D51CDD9A55F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2841A89B-0932-4EFC-90C3-2D51CDD9A55F}.Debug|Win32.Build.0 = Debug|Win32
+		{2841A89B-0932-4EFC-90C3-2D51CDD9A55F}.Release|Win32.ActiveCfg = Release|Win32
+		{2841A89B-0932-4EFC-90C3-2D51CDD9A55F}.Release|Win32.Build.0 = Release|Win32
+		{C45F92CE-63BB-4C66-9C17-B4AAA18E46DD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C45F92CE-63BB-4C66-9C17-B4AAA18E46DD}.Debug|Win32.Build.0 = Debug|Win32
+		{C45F92CE-63BB-4C66-9C17-B4AAA18E46DD}.Release|Win32.ActiveCfg = Release|Win32
+		{C45F92CE-63BB-4C66-9C17-B4AAA18E46DD}.Release|Win32.Build.0 = Release|Win32
+		{21BB29BB-9E5C-4CCF-8C52-9AB455E4EE10}.Debug|Win32.ActiveCfg = Debug|Win32
+		{21BB29BB-9E5C-4CCF-8C52-9AB455E4EE10}.Debug|Win32.Build.0 = Debug|Win32
+		{21BB29BB-9E5C-4CCF-8C52-9AB455E4EE10}.Release|Win32.ActiveCfg = Release|Win32
+		{21BB29BB-9E5C-4CCF-8C52-9AB455E4EE10}.Release|Win32.Build.0 = Release|Win32
+		{61764508-3F6E-474C-A0BF-CEC4833AAF0B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{61764508-3F6E-474C-A0BF-CEC4833AAF0B}.Debug|Win32.Build.0 = Debug|Win32
+		{61764508-3F6E-474C-A0BF-CEC4833AAF0B}.Release|Win32.ActiveCfg = Release|Win32
+		{61764508-3F6E-474C-A0BF-CEC4833AAF0B}.Release|Win32.Build.0 = Release|Win32
+		{7959E0E7-4C8D-4E33-A94F-BB033F71DAD8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7959E0E7-4C8D-4E33-A94F-BB033F71DAD8}.Debug|Win32.Build.0 = Debug|Win32
+		{7959E0E7-4C8D-4E33-A94F-BB033F71DAD8}.Release|Win32.ActiveCfg = Release|Win32
+		{7959E0E7-4C8D-4E33-A94F-BB033F71DAD8}.Release|Win32.Build.0 = Release|Win32
+		{45D7E18B-52B5-4AF5-9BE4-E4356D217B32}.Debug|Win32.ActiveCfg = Debug|Win32
+		{45D7E18B-52B5-4AF5-9BE4-E4356D217B32}.Debug|Win32.Build.0 = Debug|Win32
+		{45D7E18B-52B5-4AF5-9BE4-E4356D217B32}.Release|Win32.ActiveCfg = Release|Win32
+		{45D7E18B-52B5-4AF5-9BE4-E4356D217B32}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{21BB29BB-9E5C-4CCF-8C52-9AB455E4EE10} = {627A8A46-25D5-4E52-B547-BE0E76F64275}
+		{61764508-3F6E-474C-A0BF-CEC4833AAF0B} = {627A8A46-25D5-4E52-B547-BE0E76F64275}
+		{7959E0E7-4C8D-4E33-A94F-BB033F71DAD8} = {627A8A46-25D5-4E52-B547-BE0E76F64275}
+		{45D7E18B-52B5-4AF5-9BE4-E4356D217B32} = {627A8A46-25D5-4E52-B547-BE0E76F64275}
+		{C45F92CE-63BB-4C66-9C17-B4AAA18E46DD} = {627A8A46-25D5-4E52-B547-BE0E76F64275}
+	EndGlobalSection
+EndGlobal
